@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://citel.vercel.app/">
     <img alt="secktor docs" height="280" src="https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png">
-    <h1 align="center">Secktor🖤</h1>
+    <h1 align="center">ZYIOS🖤</h1>
   </a>
 </p>
  
 <p align="center">
 
-  <a aria-label="Join our chats" href="https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl" target="_blank">
+  <a aria-label="Join our chats" href="https://chat.whatsapp.com/Cz8UmW1VUzsD4EyaBTmbcW" target="_blank">
     <img alt="whatsapp" src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
  
@@ -16,7 +16,7 @@
   </a>
 </p>
 <p align="center">
-  <a aria-label="Deploy on heroku" href="https://www.heroku.com/deploy/?template=https://github.com/SamPandey001/Secktor-Md"><b>Deploy on heroku</b></a>
+  <a aria-label="Deploy on heroku" href="https://www.heroku.com/deploy/?template=https://github.com/DarkenWaves/zyios-v1"><b>Deploy on heroku</b></a>
  |
   <a aria-label="secktor documentation" href="https://citel.vercel.app">Read the Documentation 📚</a>
 </p>
