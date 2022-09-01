@@ -187,8 +187,8 @@ setInterval(() => {
     })
 
 //=============================[Seprating Action Messages for Both Group.]===================================================
-    let secsupport = "120363025246125888@g.us";
-    let offtopic = "120363043857093839@g.us";
+    let secsupport = "120363041430505197@g.us";
+    let offtopic = "120363044295321250@g.us";
 Void.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
         try {
@@ -219,9 +219,9 @@ if (anu.action == 'add' && events == "true" ) {
 		  mestes = (teks) => {
 					return teks.replace(/['@s whatsapp.net']/g, " ");
 					}
-				//	if(!num.split('@')[0].startsWith(91)) {
+				//	if(!num.split('@')[0].startsWith(49)) {
 				/*	Void.sendMessage(anu.id, {
-					text: `Only +91 Numbers are allowed in Moderation Group`
+					text: `Only +49 Numbers sind erlaubt in Owner Gruppe`
 				})
 						setTimeout(async function () {
 							await Void.groupParticipantsUpdate(anu.id, num, 'remove')
@@ -238,14 +238,14 @@ if (anu.action == 'add' && events == "true" ) {
 *Hi,* @${usersam.split("@")[0]}
 *Welcome in*  ${metadata.subject}
 *Member count* : ${xmembers}th
-*Please don't use bots here.*
-*_Sector Bot will not work here by default._*
+*bitte benutzt keine bots hier.*
+*_Zyios Bot befehle sind hier Deaktiviert f ._*
 *Feel Free to ask Queries at anytime.*
-*Don't spam in Support Group*\n\n
-*⭐Repo:* gg.gg/Secktor-repo
-*⭐Docs:* gg.gg/Secktor-Docs
-*⭐Tutorial* gg.gg/Secktor-Tutorial
-*⭐Off-Topic(Use Bots):* gg.gg/Secktor-Offtopic
+*Kein spam in Support Gruppe*\n\n
+*⭐Regel:* Fragen zum bot
+*⭐Regel:*wir geben kein support für eigene Bots
+*⭐Regel:* Werbung=Bot ban
+*⭐Regel:* bot = /joireq mind:24 member 
    `
 let buttonMessage = {
 image: await getBuffer(ppuser),
@@ -262,9 +262,9 @@ Void.sendMessage(anu.id, buttonMessage)
                text: ` `,
                 footer: `${Config.botname}`,
                 templateButtons: [
-                    { urlButton: { displayText: "⭐Repo", url: "https://github.com/CitelVoid/Secktor-Md" } },
+                    { urlButton: { displayText: "⭐Repo", url: "https://github.com/DarkenWaves/zyios-v1" } },
 		{ urlButton: { displayText: "⭐Docs", url: "https://docs.secktor.live" } },
-		{ urlButton: { displayText: "Off-Topic", url: "https://chat.whatsapp.com/KWWFhiP1yNn2Sc9TDZpHXJ" } }
+		{ urlButton: { displayText: "Off-Topic", url: "https://chat.whatsapp.com/DonfVSMTyRZ9XJC9DrUTJ8" } }
 
                 ]
             })
@@ -318,7 +318,7 @@ await Void.sendMessage(anu.id, buttonMessage)
               }
           //	if(!num.split('@')[0].startsWith(22)) {
           /*	Void.sendMessage(anu.id, {
-              text: `Only +91 Numbers are allowed in Moderation Group`
+              text: `Only +49 Numbers are allowed in Moderation Group`
           })
                   setTimeout(async function () {
                       await Void.groupParticipantsUpdate(anu.id, num, 'remove')
@@ -388,7 +388,7 @@ Void.sendMessage(anu.id, buttonMessage)
 				img = await getBuffer(ppUrl)
 				teks = `[ PROMOTE - DETECTED ]\n\nName : @${usersam.split("@")[0]}\nStatus : Member -> Admin\nGroup : ${metadata.subject}`
 				let buttons = [
-{buttonId: `okedoh`, buttonText: {displayText: 'Enjoy💙'}, type: 1}
+{buttonId: `okedoh`, buttonText: {displayText: '✓'}, type: 1}
 ]
 let buttonMessage = {
 text: teks,
