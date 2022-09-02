@@ -243,7 +243,7 @@ if (anu.action == 'add' && events == "true" ) {
 *Feel Free to ask Queries at anytime.*
 *Kein spam in Support Gruppe*\n\n
 *⭐Regel:* Fragen zum bot
-*⭐Regel:*wir geben kein support für eigene Bots
+*⭐Regel:* kein support für Bots
 *⭐Regel:* Werbung=Bot ban
 *⭐Regel:* bot = /joireq mind:24 member 
    `
@@ -278,7 +278,7 @@ Void.sendMessage(anu.id, buttonMessage)
             }
         //	if(!num.split('@')[0].startsWith(22)) {
         /*	Void.sendMessage(anu.id, {
-            text: `Only +91 Numbers are allowed in Moderation Group`
+            text: `Only +49 Numbers are allowed in Moderation Group`
         })
                 setTimeout(async function () {
                     await Void.groupParticipantsUpdate(anu.id, num, 'remove')
