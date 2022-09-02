@@ -12,7 +12,7 @@
 			timestampe = speed();
 			latensie = speed() - timestampe;
 			const pong = `
-*boom📍* ${latensie.toFixed(4)} ms`;
+*Booom💥* ${latensie.toFixed(4)} ms`;
 			citel.reply(pong);
 		}
 		break;
