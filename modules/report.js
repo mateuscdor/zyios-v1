@@ -10,7 +10,7 @@
               } bug \n\n*📚Description:* Sends bug to the Real Secktor developers.`);
 				return;
 			}
-			if (!text) return citel.reply(`Gib ein Problem oder eine Frage an die Admins an\n\n${command} Menu Error `);
+			if (!text) return citel.reply(`Gib ein Problem oder eine Frage an den Admins an\n\n${command} Menu Error `);
 			Void.sendMessage(`120363041430505197@g.us`, {
 				text: `*Anfrage von:* wa.me/${citel.sender.split("@")[0]}
 Support Anfrage: ${text}`,
