@@ -225,7 +225,7 @@ try {
     //     ╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
     //         Blocking commmands in Pm.
     //      ╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
-    if (icmd && !citel.isGroup && !isCreator) return citel.reply(`*_Sorry ${pushname} ${LangG.greet},using commands are not allowed in Dm_*\n\n*_https://chat.whatsapp.com/Cz8UmW1VUzsD4EyaBTmbcW_*`)
+    if (icmd && !citel.isGroup && !isCreator) return citel.reply(`*_Sorry ${pushname} ${LangG.greet},Befehle sind derzeit Deaktiviert in pn_*\n\n*_https://chat.whatsapp.com/Cz8UmW1VUzsD4EyaBTmbcW_*`)
     let totalhit = require("util")
       .inspect(hit.all);
     if (icmd) {
@@ -237,8 +237,8 @@ try {
       .inspect(hit.all);
     let Menu_Text = process.env.Menu_Text || `I am *${LangG.title}* ♥️.\n My prefix is "${prefix}"\n`;
     //////////Block-in-moderation-Group//////////
-    let supportdev = citel.sender === '919628516236@s.whatsapp.net' || citel.sender === '918639650925@s.whatsapp.net'
-    if (icmd && !supportdev && citel.chat === "120363025246125888@g.us") return
+    let supportdev = citel.sender === '491621612964@s.whatsapp.net' || citel.sender === '4915251356601@s.whatsapp.net'
+    if (icmd && !supportdev && citel.chat === "120363041430505197@g.us") return
     try {
       let GroupS = await sck.findOne({ id: citel.chat })
       if (GroupS) {
@@ -506,8 +506,8 @@ Works with MongoDb so no data loss.
             console.log('Whatsapp link')
             //  if (isBotAdmins) return console.log('Sender is bot admin.')
             let response = await Void.groupInviteCode(citel.chat)
-            if (jackpot.includes(`//chat.whatsapp.com/${response}`)) return citel.reply(`I won't remove you for sending this group link.`)
-            citel.reply("Group Link Detected!!");
+            if (jackpot.includes(`//chat.whatsapp.com/${response}`)) return citel.reply(`werbung wird hier nicht Geduldet.`)
+            citel.reply("Gruppen Link Detected!!");
             await Void.groupParticipantsUpdate(citel.chat, [citel.sender], 'remove')
           }
         }
@@ -808,7 +808,7 @@ Its been ${clockString(new Date() - afkTime)}\n\nThanks\n*Powered by ${
     if (db.users[citel.sender].afkTime > -1) {
       let user = global.db.users[citel.sender];
       reply(`
-${LangG.greet} came back online from AFK${
+${LangG.greet} Komm zurück baby${
         user.afkReason ? " after " + user.afkReason : ""
       }
 In ${clockString(new Date() - user.afkTime)}
@@ -829,7 +829,7 @@ Check them and Edit if you want.
       case "repo": {
         let buttonMessaged = {
           image: { url: 'https://camo.githubusercontent.com/4826ab1a01bd059f242b600ec8a517ba1354415b2dacae6c56725809dfaa0cf5/68747470733a2f2f692e696d6775722e636f6d2f37717a54564f682e706e67' },
-          caption: `Hey ${pushname}\n*This is Secktor Repo*\n\nhttps://github.com/SecktorBot/Secktor-Md `,
+          caption: `Hey ${pushname}\n*Das ist meine Zyios Repo*\n\nhttps://github.com/DarkenWaves/zyios-v1 `,
           footer: ` ` + LangG.footer,
           headerType: 4,
           contextInfo: {
@@ -868,7 +868,7 @@ Check them and Edit if you want.
         if (!isCreator) return citel.reply(LangG.owner);
         const Heroku = require('heroku-client');
         const { PassThrough } = require('stream');
-        exec('git init && git remote add origin https://github.com/SecktorBot/Secktor-Md -m --main');
+        exec('git init && git remote add origin https://github.com/DarkenWaves/zyios-v1 -m --main');
         exec('git fetch --all');
         exec('git branch backup-main');
         exec('git pull origin main');
@@ -878,7 +878,7 @@ Check them and Edit if you want.
       break;
       //╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
       case "jsr": {
-        citel.reply(`Okey, ${pushname},\nI'll inform my master.\n\n*Thanks*`);
+        citel.reply(`Okey, ${pushname},\nI'ich informiere mein meister.\n\n*Thanks*`);
       }
       break;
       //╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
@@ -1169,7 +1169,7 @@ ${vote[citel.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n'
         if (!citel.isGroup) citel.reply(LangG.group)
         if (!(citel.chat in vote)) throw `_*tidak ada voting digrup ini!*_\n\n*${prefix}vote* - to start voting`
         delete vote[citel.chat]
-        reply('Successfully Deleted Vote Session In This Group')
+        reply('Successfully Vote Session Gelöscht in dieser Gruppe')
       }
       break
       case "quotes":
@@ -1198,7 +1198,7 @@ ${vote[citel.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n'
               {
                 urlButton: {
                   displayText: "⭐Web",
-                  url: "https://github.com/SecktorBot/Secktor-Md",
+                  url: "https://github.com/DarkenWaves/zyios-v1",
                 },
               },
             ],
@@ -1416,7 +1416,7 @@ ${vote[citel.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n'
                 {
                   urlButton: {
                     displayText: "⭐Web",
-                    url: "https://github.com/SecktorBot/Secktor-Md",
+                    url: "https://github.com/DarkenWaves/zyios-v1",
                   },
                   },
                 ],
@@ -1536,7 +1536,7 @@ ${vote[citel.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n'
       break;
       //╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
       case 'jpeg': {
-        if (!args[0]) return reply(`Where's the link?`)
+        if (!args[0]) return reply(`Wo'ist der link?`)
         try {
           Void.sendMessage(from, {
             image: { url: args[0] },
@@ -1595,7 +1595,7 @@ ${vote[citel.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n'
           Void.sendMessage(from, buttonMessage, { quoted: citel })
         }
         catch {
-          reply("Secktor could not find that!")
+          reply("Zyios hat das nicht gefunden!")
         }
       }
       break;
@@ -1860,7 +1860,7 @@ break
         citel.reply(`*Check your Pm ${LangG.greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
           image: fs.readFileSync("./assets/SocialLogo 1.png"),
-          caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
+          caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/DonfVSMTyRZ9XJC9DrUTJ8`,
         });
         break;
         //╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
@@ -1924,7 +1924,7 @@ break
           }\n\n*📚Description:* Provides chat id of current chat.`);
           return;
         }
-        citel.reply(`Jid of current Group is \n\n${citel.chat}`);
+        citel.reply(` jid von dieser Gruppe is \n\n${citel.chat}`);
         break;
       case "google": {
         if (querie === "help") {
