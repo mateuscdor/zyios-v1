@@ -19,7 +19,7 @@
 					image: {
 						url: picsecktor,
 					},
-					caption: `*Hey ${tname}*\n\nNow You are permitted by my owner to pm now.\n\n *${LangG.title}*`,
+					caption: `*Hey ${tname}*\n\ndu kannst jetzt bei mir im pn chat befehle geben.\n\n *${LangG.title}*`,
 					footer: "Personal Assistant",
 				}, {
 					quoted: citel,
@@ -37,7 +37,7 @@
               } reply to user \n\n*📚Description:* It take pm permit permission back.`);
 			}
 			if (!botNumber) return citel.reply("This feature is only for bot Number.");
-			if (!citel.quoted) return citel.reply("Please reply to user");
+			if (!citel.quoted) return citel.reply("Makiere eine Person");
 			let samkk = citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
 			if (config.pmpermit == "true") {
 				await pmpermit.bhagbe(samkk);
@@ -47,7 +47,7 @@
 					image: {
 						url: picsecktor,
 					},
-					caption: `*Hey ${tname}  ${LangG.greet}*\n\nYour pm permit permission has been revoked now.\n\n _Powered by ${LangG.title}_`,
+					caption: `*Hey ${tname}  ${LangG.greet}*\n\ndu kannst keine befehle mehr im pn chat geben.\n\n _Powered by ${LangG.title}_`,
 					footer: "Personal Assistant",
 				}, {
 					quoted: citel,
