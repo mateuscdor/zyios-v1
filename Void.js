@@ -256,7 +256,7 @@ Here we are setting Levelling,With help of Module discord-Xp  https://www.npmjs.
 Works with MongoDb so no data loss.
 ╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺╺
 */
-    if (icmd) {
+    if (iCmd && !isUser) {
       const randomXp = 8;
       const hasLeveledUp = await Levels.appendXp(citel.sender, "RandomXP", randomXp);
       if (hasLeveledUp) {
@@ -2204,4 +2204,4 @@ break
     delete require.cache[file];
     require(file);
   });
-}
+}#0040FF
